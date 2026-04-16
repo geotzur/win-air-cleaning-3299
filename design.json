@@ -1,0 +1,50 @@
+{
+  "colors": {
+    "primary": "#D93B4D",
+    "primary_light": "#FDE8EB",
+    "primary_dark": "#8C1F2E",
+    "secondary": "#3578CC",
+    "accent": "#2CBAB5",
+    "background": "#FAFBFD",
+    "surface": "#F0F4F7",
+    "surface_dark": "#1A2538",
+    "text_primary": "#1A2538",
+    "text_secondary": "#5A6B7D",
+    "text_light": "#FFFFFF",
+    "border": "#D8DEE6"
+  },
+  "fonts": {
+    "heading": "Urbanist",
+    "body": "Source Sans 3",
+    "google_import": "https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;800&family=Source+Sans+3:wght@400;500;600&display=swap"
+  },
+  "gradients": {
+    "hero_overlay": "radial-gradient(ellipse at 25% 15%, #FDE8EB 0%, transparent 55%), radial-gradient(ellipse at 80% 85%, #E4ECF7 0%, transparent 50%)",
+    "card_overlay": "linear-gradient(to bottom, transparent 40%, rgba(26, 37, 56, 0.03) 100%)",
+    "cta_overlay": "linear-gradient(135deg, #8C1F2E 0%, #1A2538 100%)",
+    "section_bg": "radial-gradient(ellipse at 50% 0%, rgba(53, 120, 204, 0.03) 0%, transparent 60%)",
+    "gradient_blob_1": "radial-gradient(circle, #D93B4D 0%, transparent 70%)",
+    "gradient_blob_2": "radial-gradient(circle, #2CBAB5 0%, transparent 70%)"
+  },
+  "style": {
+    "border_radius": "1rem",
+    "border_radius_lg": "1.25rem",
+    "border_radius_xl": "1.5rem",
+    "border_radius_full": "9999px",
+    "shadow_sm": "0 1px 3px rgba(26, 37, 56, 0.04)",
+    "shadow_md": "0 4px 12px -2px rgba(26, 37, 56, 0.06)",
+    "shadow_lg": "0 12px 28px -4px rgba(26, 37, 56, 0.08)",
+    "shadow_xl": "0 20px 40px -8px rgba(26, 37, 56, 0.12)"
+  },
+  "glass": {
+    "card_dark": "backdrop-filter: blur(16px); background: rgba(26, 37, 56, 0.85); border: 1px solid rgba(255, 255, 255, 0.08)",
+    "card_light": "backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.82); border: 1px solid rgba(216, 222, 230, 0.5)",
+    "input": "backdrop-filter: blur(8px); background: rgba(255, 255, 255, 0.92); border: 1px solid #D8DEE6"
+  },
+  "animations": {
+    "float_slow": "float-slow 8s ease-in-out infinite",
+    "ken_burns": "kenBurns 12s ease-in-out forwards",
+    "cta_pulse": "ctaPulse 2.5s ease-in-out infinite"
+  },
+  "rtl": false
+}

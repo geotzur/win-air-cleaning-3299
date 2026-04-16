@@ -1,0 +1,26 @@
+<svg width="48" height="48" viewBox="0 0 48 48">
+  <path
+    d="M 8 8 L 40 8 L 40 40 L 8 40 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M 12 16 L 36 16 L 36 16.001 L 12 16.001 Z M 12 24 L 36 24 L 36 24.001 L 12 24.001 Z M 12 32 L 36 32 L 36 32.001 L 12 32.001 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M 18 19 L 19 19 L 19 20 L 18 20 Z M 25 26 L 26 26 L 26 27 L 25 27 Z M 32 21 L 33 21 L 33 22 L 32 22 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

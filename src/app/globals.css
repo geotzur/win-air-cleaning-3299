@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;800&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #D93B4D;
+  --color-primary-light: #FDE8EB;
+  --color-primary-dark: #8C1F2E;
+  --color-secondary: #3578CC;
+  --color-accent: #2CBAB5;
+  --color-background: #FAFBFD;
+  --color-surface: #F0F4F7;
+  --color-surface-dark: #1A2538;
+  --color-text-primary: #1A2538;
+  --color-text-secondary: #5A6B7D;
+  --color-border: #D8DEE6;
+  --swiper-theme-color: #D93B4D;
+  --swiper-pagination-bullet-inactive-color: #D8DEE6;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Urbanist', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3578CC, #2CBAB5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dot-grid-bg {
+  background-image: radial-gradient(circle, #1A2538 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.03;
+}
+
+.underline-sweep {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-sweep::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 200ms ease-out;
+}
+
+.underline-sweep:hover::after {
+  transform: scaleX(1);
+}
+
+.whisper-label {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-secondary);
+}
+
+.whisper-label-teal {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+}
+
+/* Swiper overrides */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 9999px !important;
+  transition: all 300ms ease-out;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px !important;
+  background: var(--color-primary) !important;
+}
+
+/* Liquid fill button */
+.liquid-fill-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.liquid-fill-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: var(--color-primary-dark);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 280ms ease-out, height 280ms ease-out;
+  z-index: -1;
+}
+
+.liquid-fill-btn:hover::before {
+  width: 300%;
+  height: 300%;
+}

@@ -1,0 +1,10 @@
+<svg viewBox="0 0 48 48" width="48" height="48">
+  <!-- Vent Outer Casing -->
+  <rect x="10" y="10" width="28" height="28" rx="4" ry="4" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Vent Opening / Grille area -->
+  <rect x="14" y="14" width="20" height="16" rx="2" ry="2" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Lint Clog (closed path) -->
+  <path d="M 16 28 Q 15 24 18 20 Q 24 19 30 20 Q 33 24 32 28 Q 30 31 24 32 Q 18 31 16 28 Z" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

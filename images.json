@@ -1,0 +1,34 @@
+{
+  "hero": "/images/hero.jpg",
+  "about": "/images/about-team.jpg",
+  "cta_bg": "/images/cta-background.jpg",
+  "services": {
+    "commercial-air-duct-cleaning": "/images/service-commercial-air-duct-cleaning.jpg",
+    "dryer-vent-cleaning": "/images/service-dryer-vent-cleaning.jpg",
+    "hvac-system-cleaning": "/images/service-hvac-system-cleaning.jpg",
+    "residential-air-duct-cleaning": "/images/service-residential-air-duct-cleaning.jpg"
+  },
+  "areas": {
+    "burbank": "/images/area-burbank.jpg",
+    "downtown-la": "/images/area-downtown-la.jpg",
+    "hollywood": "/images/area-hollywood.jpg",
+    "pasadena": "/images/area-pasadena.jpg",
+    "santa-monica": "/images/area-santa-monica.jpg"
+  },
+  "before_after": {
+    "residential-air-duct-cleaning": {
+      "after": "/images/after-residential-air-duct-cleaning.jpg",
+      "before": "/images/before-residential-air-duct-cleaning.jpg"
+    }
+  },
+  "icons": {
+    "commercial-air-duct-cleaning": "/icons/service-commercial-air-duct-cleaning.svg",
+    "dryer-vent-cleaning": "/icons/service-dryer-vent-cleaning.svg",
+    "electrostatic-filter-installation": "/icons/service-electrostatic-filter-installation.svg",
+    "hvac-system-cleaning": "/icons/service-hvac-system-cleaning.svg",
+    "indoor-air-quality-testing": "/icons/service-indoor-air-quality-testing.svg",
+    "mold-remediation-in-ducts": "/icons/service-mold-remediation-in-ducts.svg",
+    "residential-air-duct-cleaning": "/icons/service-residential-air-duct-cleaning.svg",
+    "uv-light-air-purification": "/icons/service-uv-light-air-purification.svg"
+  }
+}

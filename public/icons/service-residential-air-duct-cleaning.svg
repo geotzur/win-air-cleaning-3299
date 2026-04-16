@@ -1,0 +1,32 @@
+<svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Path 1: Residential Air Vent Frame -->
+  <!-- A simple rectangular frame representing a typical air return vent. -->
+  <path
+    d="M 10 10 H 38 V 38 H 10 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Path 2: Air Duct Cleaning Nozzle -->
+  <!-- A trapezoidal shape representing a flat cleaning nozzle entering the vent opening. -->
+  <path
+    d="M 18 2 L 30 2 L 28 12 L 20 12 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Path 3: Dust Cloud / Swirl -->
+  <!-- A stylized, irregular cloud shape placed within the vent, implying dust being agitated and removed during cleaning. -->
+  <path
+    d="M 24 20 C 20 24, 18 30, 22 32 C 26 34, 30 32, 28 28 C 30 26, 28 22, 24 20 Z"
+    fill="none"
+    stroke="hsl(216, 60%, 28%)"
+    stroke-width="2.0"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
