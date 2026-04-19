@@ -56,7 +56,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       />
 
       {/* Bold Type Hero */}
-      <section className="relative overflow-hidden py-24 md:py-32" style={{
+      <section className="relative overflow-hidden py-16 md:py-24 lg:py-32" style={{
         background: 'radial-gradient(ellipse at 20% 50%, rgba(53,120,204,0.08) 0%, transparent 50%), radial-gradient(ellipse at 80% 20%, rgba(44,186,181,0.06) 0%, transparent 50%), #FDE8EB',
       }}>
         <div className="relative mx-auto max-w-7xl px-6">

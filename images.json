@@ -30,5 +30,11 @@
     "mold-remediation-in-ducts": "/icons/service-mold-remediation-in-ducts.svg",
     "residential-air-duct-cleaning": "/icons/service-residential-air-duct-cleaning.svg",
     "uv-light-air-purification": "/icons/service-uv-light-air-purification.svg"
+  },
+  "_layout_meta": {
+    "layout_pattern": "Breeze Showcase Carousel",
+    "hero_pattern": "Atmosphere Hero",
+    "service_aspect": "4:3",
+    "unique_services": 4
   }
 }

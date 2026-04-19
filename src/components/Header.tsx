@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { navLinks } from '@/lib/header-data';
 
 export default function Header() {
@@ -35,8 +36,9 @@ export default function Header() {
       >
         <div className="flex items-center justify-between px-6 py-3">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 font-heading text-[20px] font-semibold text-primary">
-            Win Air Cleaning
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
+            <Image src="/logo.jpg" alt="Win Air Cleaning logo" width={36} height={36} className="rounded-full" />
+            <span className="font-heading text-[20px] font-semibold text-primary">Win Air Cleaning</span>
           </Link>
 
           {/* Center nav — desktop */}

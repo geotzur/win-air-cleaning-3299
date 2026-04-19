@@ -50,7 +50,7 @@ export default async function AreaDetailPage({ params }: { params: Promise<{ are
       />
 
       {/* Map Texture Hero */}
-      <section className="relative overflow-hidden bg-surface py-24 md:py-32">
+      <section className="relative overflow-hidden bg-surface py-16 md:py-24 lg:py-32">
         {/* Dot grid overlay */}
         <div className="absolute inset-0 dot-grid-bg" />
         <div className="relative mx-auto max-w-7xl px-6">

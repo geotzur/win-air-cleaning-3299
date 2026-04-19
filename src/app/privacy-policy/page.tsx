@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
     <>
       <BreadcrumbJsonLd items={[{ name: 'Home', href: '/' }, { name: 'Privacy Policy', href: '/privacy-policy/' }]} />
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary-light py-24 md:py-32">
+      <section className="relative overflow-hidden bg-primary-light py-16 md:py-24 lg:py-32">
         <div className="absolute inset-0 opacity-30" style={{
           background: 'radial-gradient(ellipse at 30% 20%, rgba(53,120,204,0.15) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(44,186,181,0.1) 0%, transparent 50%)',
         }} />

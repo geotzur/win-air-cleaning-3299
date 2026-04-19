@@ -1,8 +1,5 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Commercial Air Duct Opening -->
-  <path d="M 6 18 H 42 V 30 H 6 Z"/>
-  <!-- Cleaning Brush Head -->
-  <path d="M 24 26 m -5 0 a 5 5 0 1 0 10 0 a 5 5 0 1 0 -10 0 Z"/>
-  <!-- Brush Shaft -->
-  <path d="M 23 8 L 23 21 L 25 21 L 25 8 Z"/>
+  <path d="M 6 18 L 42 18 L 42 30 L 6 30 Z" fill="none"/>
+  <path d="M 30 23 L 20 23 L 20 25 L 30 25 Z" fill="none"/>
+  <path d="M 36 24 A 6 6 0 1 0 36 24.001 Z" fill="none"/>
 </svg>

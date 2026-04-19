@@ -1,0 +1,8 @@
+<svg viewBox="0 0 48 48" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Duct (key object) -->
+  <path fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" d="M 8 16 L 40 16 L 40 28 L 8 28 Z"/>
+  <!-- Mold Blob (specific to remediation, using the allowed fill color) -->
+  <path fill="hsl(354, 65%, 48%)" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" d="M 14 22 C 12 19, 18 19, 20 22 C 22 25, 16 25, 14 22 Z"/>
+  <!-- Cleaning Paddle/Wand (the tool) -->
+  <path fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" d="M 36 8 L 32 12 L 14 30 L 18 26 Z"/>
+</svg>
