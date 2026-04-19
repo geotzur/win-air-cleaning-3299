@@ -2,8 +2,12 @@
 
 import { useEffect, useRef } from 'react';
 import { content } from '@/lib/data';
+import { Clock, Home, Star, ShieldCheck } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
 const stats = content.home.stats;
+
+const statIcons: LucideIcon[] = [Clock, Home, Star, ShieldCheck];
 
 export default function StatsSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -70,7 +74,9 @@ export default function StatsSection() {
     <section ref={sectionRef} className="bg-surface-dark py-10 md:py-16">
       <div className="max-w-4xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
-          {stats.map((stat, i) => (
+          {stats.map((stat, i) => {
+            const Icon = statIcons[i] || ShieldCheck;
+            return (
             <div key={i} className="flex flex-col items-center group cursor-default">
               <div className="relative w-[72px] h-[72px] md:w-[96px] md:h-[96px] flex items-center justify-center">
                 <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 96 96" fill="none">
@@ -91,11 +97,15 @@ export default function StatsSection() {
                   {stat.value}
                 </span>
               </div>
-              <span className="font-heading font-light text-[11px] uppercase tracking-widest text-text-secondary mt-3 text-center">
-                {stat.label}
-              </span>
+              <div className="flex items-center gap-1.5 mt-3">
+                <Icon size={13} className="text-text-secondary/60" />
+                <span className="font-heading font-light text-[11px] uppercase tracking-widest text-text-secondary text-center">
+                  {stat.label}
+                </span>
+              </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { content } from '@/lib/data';
+import { HelpCircle, ChevronDown } from 'lucide-react';
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -20,13 +21,18 @@ export default function FAQSection() {
     <section className="bg-surface-dark py-12 md:py-20">
       <div className="max-w-3xl mx-auto px-6">
         {/* Heading */}
-        <div className="mb-12">
-          <p className="font-heading font-medium text-xs uppercase tracking-[0.2em] text-accent mb-3">
-            COMMON QUESTIONS
-          </p>
-          <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-white">
-            Frequently Asked Questions
-          </h2>
+        <div className="mb-12 flex items-start gap-4">
+          <div className="hidden md:flex w-12 h-12 rounded-full bg-accent/15 items-center justify-center flex-shrink-0 mt-1">
+            <HelpCircle size={24} className="text-accent" />
+          </div>
+          <div>
+            <p className="font-heading font-medium text-xs uppercase tracking-[0.2em] text-accent mb-3">
+              COMMON QUESTIONS
+            </p>
+            <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-white">
+              Frequently Asked Questions
+            </h2>
+          </div>
         </div>
 
         {/* FAQ list */}
@@ -37,7 +43,7 @@ export default function FAQSection() {
               <div key={i} className="relative">
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className={`w-full text-left py-6 pl-16 pr-4 relative transition-all duration-300 ${
+                  className={`w-full text-left py-6 pl-16 pr-10 relative transition-all duration-300 ${
                     isOpen ? 'border-l-2 border-accent' : 'border-l-2 border-transparent'
                   }`}
                 >
@@ -52,6 +58,11 @@ export default function FAQSection() {
 
                   <span className="font-heading font-semibold text-base text-white block">
                     {faq.question}
+                  </span>
+
+                  {/* Chevron icon */}
+                  <span className={`absolute right-2 top-1/2 -translate-y-1/2 transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`}>
+                    <ChevronDown size={20} className="text-accent" />
                   </span>
                 </button>
 

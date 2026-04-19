@@ -1,3 +1,9 @@
+import { getCtaImage } from '@/lib/images';
+import Image from 'next/image';
+import { Phone, ShieldCheck, Clock, Star } from 'lucide-react';
+
+const ctaImage = getCtaImage();
+
 export default function CTASection() {
   return (
     <section className="relative">
@@ -17,14 +23,33 @@ export default function CTASection() {
         </svg>
       </div>
 
-      {/* Gradient background */}
-      <div
-        className="py-12 md:py-20 lg:py-28"
-        style={{
-          background: 'linear-gradient(135deg, #8C1F2E 0%, #1A2538 100%)',
-        }}
-      >
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      {/* Gradient background with image */}
+      <div className="relative py-12 md:py-20 lg:py-28 overflow-hidden">
+        {ctaImage && (
+          <div className="absolute inset-0">
+            <Image
+              src={ctaImage}
+              alt=""
+              fill
+              className="object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background: 'linear-gradient(135deg, rgba(140,31,46,0.88) 0%, rgba(26,37,56,0.92) 100%)',
+              }}
+            />
+          </div>
+        )}
+        {!ctaImage && (
+          <div
+            className="absolute inset-0"
+            style={{
+              background: 'linear-gradient(135deg, #8C1F2E 0%, #1A2538 100%)',
+            }}
+          />
+        )}
+        <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           {/* Whisper label */}
           <p className="font-heading font-medium text-xs uppercase tracking-[0.2em] text-accent mb-4">
             GET STARTED
@@ -44,8 +69,9 @@ export default function CTASection() {
           {/* CTA button */}
           <a
             href="/contact/"
-            className="inline-flex items-center justify-center rounded-full bg-primary text-white h-14 px-10 font-heading font-semibold uppercase text-sm tracking-wide hover:bg-primary-dark transition-colors animate-cta-pulse"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary text-white h-14 px-10 font-heading font-semibold uppercase text-sm tracking-wide hover:bg-primary-dark transition-colors animate-cta-pulse"
           >
+            <ShieldCheck size={18} />
             Get My Free Quote
           </a>
 
@@ -53,11 +79,27 @@ export default function CTASection() {
           <p className="mt-6">
             <a
               href="tel:5559247100"
-              className="font-heading text-white tracking-wide text-lg hover:text-accent transition-colors"
+              className="inline-flex items-center gap-2 font-heading text-white tracking-wide text-lg hover:text-accent transition-colors"
             >
+              <Phone size={18} />
               (555) 924-7100
             </a>
           </p>
+
+          {/* Trust badges */}
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-8 text-white/50">
+            <span className="inline-flex items-center gap-1.5 text-xs font-heading uppercase tracking-wider">
+              <Clock size={14} className="text-accent/70" /> 2-Hour Response
+            </span>
+            <span className="hidden sm:inline text-white/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-heading uppercase tracking-wider">
+              <Star size={14} className="text-accent/70" /> 4.9 Star Rating
+            </span>
+            <span className="hidden sm:inline text-white/20">|</span>
+            <span className="inline-flex items-center gap-1.5 text-xs font-heading uppercase tracking-wider">
+              <ShieldCheck size={14} className="text-accent/70" /> NADCA Certified
+            </span>
+          </div>
         </div>
       </div>
     </section>

@@ -4,8 +4,11 @@ import { useEffect, useCallback, useMemo } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
 import { content } from '@/lib/data';
+import { getHeroImage } from '@/lib/images';
+import Image from 'next/image';
 
 const hero = content.home.hero;
+const heroImage = getHeroImage();
 
 export default function HeroSection() {
   useEffect(() => {
@@ -40,12 +43,26 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Hero background image */}
+      {heroImage && (
+        <div className="absolute inset-0 -z-30">
+          <Image
+            src={heroImage}
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+      )}
+
       {/* Gradient mesh background */}
       <div
         className="absolute inset-0 -z-20"
         style={{
           background:
-            'radial-gradient(ellipse at 20% 20%, #FDE8EB 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, #E4ECF7 0%, transparent 60%), #FAFBFD',
+            'radial-gradient(ellipse at 20% 20%, #FDE8EB 0%, transparent 50%), radial-gradient(ellipse at 80% 80%, #E4ECF7 0%, transparent 60%), rgba(250,251,253,0.7))',
         }}
       />
 

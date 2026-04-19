@@ -107,9 +107,10 @@ export default function ProcessStepsSection() {
               const Icon = iconMap[step.icon] || CheckCircle;
               return (
                 <div key={i} className="flex flex-col items-center text-center group">
-                  {/* Circle */}
-                  <div className="w-[72px] h-[72px] rounded-full bg-secondary flex items-center justify-center mb-5 transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary">
-                    <span className="font-heading font-extrabold text-xl text-white">
+                  {/* Circle with icon */}
+                  <div className="w-[72px] h-[72px] rounded-full bg-secondary flex flex-col items-center justify-center mb-5 transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary">
+                    <Icon size={22} className="text-white mb-0.5" />
+                    <span className="font-heading font-extrabold text-xs text-white/80">
                       {step.step}
                     </span>
                   </div>
@@ -135,9 +136,10 @@ export default function ProcessStepsSection() {
               const Icon = iconMap[step.icon] || CheckCircle;
               return (
                 <div key={i} className="relative group">
-                  {/* Circle */}
-                  <div className="absolute -left-12 top-0 w-[56px] h-[56px] rounded-full bg-secondary flex items-center justify-center transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary z-10">
-                    <span className="font-heading font-extrabold text-lg text-white">
+                  {/* Circle with icon */}
+                  <div className="absolute -left-12 top-0 w-[56px] h-[56px] rounded-full bg-secondary flex flex-col items-center justify-center transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary z-10">
+                    <Icon size={18} className="text-white mb-0.5" />
+                    <span className="font-heading font-extrabold text-[10px] text-white/80">
                       {step.step}
                     </span>
                   </div>

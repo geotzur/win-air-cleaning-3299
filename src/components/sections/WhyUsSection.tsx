@@ -1,7 +1,7 @@
 'use client';
 
 import { content } from '@/lib/data';
-import { Eye, Award, Scan, DollarSign, type LucideIcon } from 'lucide-react';
+import { Eye, Award, Scan, DollarSign, ArrowRight, type LucideIcon } from 'lucide-react';
 
 const items = content.home.why_us;
 
@@ -43,9 +43,12 @@ export default function WhyUsSection() {
                 <h3 className="font-heading font-bold text-lg text-text-primary mb-2">
                   {item.title}
                 </h3>
-                <p className="font-body text-sm text-text-secondary leading-relaxed">
+                <p className="font-body text-sm text-text-secondary leading-relaxed mb-3">
                   {item.description}
                 </p>
+                <span className="inline-flex items-center gap-1 text-xs font-heading font-semibold text-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Learn More <ArrowRight size={12} />
+                </span>
               </div>
             );
           })}

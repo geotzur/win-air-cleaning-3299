@@ -1,26 +1,11 @@
-<svg width="48" height="48" viewBox="0 0 48 48">
-  <path
-    d="M 8 8 L 40 8 L 40 40 L 8 40 Z"
-    fill="none"
-    stroke="hsl(216, 60%, 28%)"
-    stroke-width="2.0"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M 12 16 L 36 16 L 36 16.001 L 12 16.001 Z M 12 24 L 36 24 L 36 24.001 L 12 24.001 Z M 12 32 L 36 32 L 36 32.001 L 12 32.001 Z"
-    fill="none"
-    stroke="hsl(216, 60%, 28%)"
-    stroke-width="2.0"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-  <path
-    d="M 18 19 L 19 19 L 19 20 L 18 20 Z M 25 26 L 26 26 L 26 27 L 25 27 Z M 32 21 L 33 21 L 33 22 L 32 22 Z"
-    fill="none"
-    stroke="hsl(216, 60%, 28%)"
-    stroke-width="2.0"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Filter Frame - A rounded rectangle representing the filter's casing -->
+  <path d="M 12 8 H 36 A 4 4 0 0 1 40 12 V 36 A 4 4 0 0 1 36 40 H 12 A 4 4 0 0 1 8 36 V 12 A 4 4 0 0 1 12 8 Z"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Internal Filter Media - Three horizontal lines to indicate the filter element -->
+  <path d="M 10 18 H 38 M 10 24 H 38 M 10 30 H 38"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Electrostatic Symbol - A lightning bolt indicating the electrostatic charge -->
+  <path d="M 16 15 L 22 22 L 16 22 L 22 29"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>

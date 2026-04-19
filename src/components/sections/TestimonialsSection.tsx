@@ -1,6 +1,7 @@
 'use client';
 
 import { getTestimonials } from '@/lib/data';
+import { Quote, User } from 'lucide-react';
 
 const testimonials = getTestimonials();
 
@@ -12,16 +13,30 @@ function StarIcon() {
   );
 }
 
-function TestimonialChip({ text, author }: { text: string; author: string }) {
+const avatarColors = ['bg-primary/30', 'bg-secondary/30', 'bg-accent/30', 'bg-primary-dark/30', 'bg-secondary/20', 'bg-accent/20'];
+
+function TestimonialChip({ text, author, index }: { text: string; author: string; index: number }) {
+  const initials = author.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
   return (
-    <div className="flex-shrink-0 w-[320px] rounded-full px-6 py-4 border border-white/[0.08] bg-white/[0.06] backdrop-blur-sm">
-      <div className="flex gap-0.5 mb-1">
-        {[...Array(5)].map((_, i) => (
-          <StarIcon key={i} />
-        ))}
+    <div className="flex-shrink-0 w-[340px] rounded-2xl px-5 py-4 border border-white/[0.08] bg-white/[0.06] backdrop-blur-sm">
+      <div className="flex items-start gap-3">
+        {/* Avatar */}
+        <div className={`flex-shrink-0 w-9 h-9 rounded-full ${avatarColors[index % avatarColors.length]} flex items-center justify-center`}>
+          <span className="font-heading font-bold text-xs text-white/80">{initials}</span>
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2 mb-1">
+            <div className="flex gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <StarIcon key={i} />
+              ))}
+            </div>
+            <Quote size={12} className="text-accent/40" />
+          </div>
+          <p className="font-body text-sm text-white/70 line-clamp-2 mb-1">{text}</p>
+          <p className="font-heading text-xs text-text-secondary">{author}</p>
+        </div>
       </div>
-      <p className="font-body text-sm text-white/70 line-clamp-2 mb-1">{text}</p>
-      <p className="font-heading text-xs text-text-secondary">{author}</p>
     </div>
   );
 }
@@ -46,7 +61,7 @@ export default function TestimonialsSection() {
       <div className="group mb-4">
         <div className="flex gap-4 animate-marquee-right hover:[animation-play-state:paused] w-max">
           {row1.map((t, i) => (
-            <TestimonialChip key={`r1-${i}`} text={t.text} author={t.author} />
+            <TestimonialChip key={`r1-${i}`} text={t.text} author={t.author} index={i} />
           ))}
         </div>
       </div>
@@ -55,7 +70,7 @@ export default function TestimonialsSection() {
       <div className="hidden md:block group">
         <div className="flex gap-4 animate-marquee-left hover:[animation-play-state:paused] w-max">
           {row2.map((t, i) => (
-            <TestimonialChip key={`r2-${i}`} text={t.text} author={t.author} />
+            <TestimonialChip key={`r2-${i}`} text={t.text} author={t.author} index={i + 3} />
           ))}
         </div>
       </div>
