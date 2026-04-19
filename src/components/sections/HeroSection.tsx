@@ -6,7 +6,6 @@ import { loadSlim } from '@tsparticles/slim';
 import { content } from '@/lib/data';
 
 const hero = content.home.hero;
-const stats = content.home.stats;
 
 export default function HeroSection() {
   useEffect(() => {
@@ -85,7 +84,7 @@ export default function HeroSection() {
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-white/70 backdrop-blur-sm px-5 py-2 mb-8">
           <span className="w-2 h-2 rounded-full bg-accent" />
           <span className="font-heading text-sm font-medium text-text-primary">
-            {hero.badge}
+            NADCA-Certified Air Duct Cleaning in Los Angeles
           </span>
         </div>
 
@@ -113,38 +112,6 @@ export default function HeroSection() {
           >
             {hero.cta_secondary}
           </a>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-2xl mx-auto">
-          {stats.map((stat, i) => (
-            <div key={i} className="flex flex-col items-center group">
-              <div className="relative w-[72px] h-[72px] md:w-[96px] md:h-[96px] flex items-center justify-center">
-                <svg
-                  className="absolute inset-0 w-full h-full"
-                  viewBox="0 0 96 96"
-                  fill="none"
-                >
-                  <circle
-                    cx="48"
-                    cy="48"
-                    r="46"
-                    stroke={i % 2 === 0 ? '#D93B4D' : '#3578CC'}
-                    strokeWidth="2"
-                    strokeOpacity="0.25"
-                    className="transition-all duration-300 group-hover:stroke-[#2CBAB5] group-hover:opacity-80"
-                    style={{ filter: 'none' }}
-                  />
-                </svg>
-                <span className="font-heading font-extrabold text-lg md:text-xl text-accent transition-colors duration-300 group-hover:text-white">
-                  {stat.value}
-                </span>
-              </div>
-              <span className="font-heading font-light text-[11px] uppercase tracking-widest text-text-secondary mt-2 text-center">
-                {stat.label}
-              </span>
-            </div>
-          ))}
         </div>
       </div>
     </section>

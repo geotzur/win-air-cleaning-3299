@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "project_dir": "/Users/dvirluz/Tectika/agentWebSite/builds/win-air-cleaning-california-65b6",
+  "company_name": "unknown",
+  "created_at": "2026-04-19T09:51:53.369115+00:00",
+  "revisions": [
+    {
+      "ts": "2026-04-19T09:51:53.369115+00:00",
+      "thread_id": 202,
+      "request": "Use the website's logo.",
+      "scope": "surgical",
+      "type": "** Image",
+      "files_changed": [],
+      "summary": "** Confirmed `logo.jpg` reference appears in built `out/index.html`",
+      "status": "success",
+      "netlify_url": "https://app.netlify.com/user/applications#personal-access-tokens",
+      "duration_sec": 1325.7
+    }
+  ]
+}
