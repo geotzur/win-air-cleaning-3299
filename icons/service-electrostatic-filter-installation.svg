@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Filter Frame - A rounded rectangle representing the filter's casing -->
+  <path d="M 12 8 H 36 A 4 4 0 0 1 40 12 V 36 A 4 4 0 0 1 36 40 H 12 A 4 4 0 0 1 8 36 V 12 A 4 4 0 0 1 12 8 Z"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Internal Filter Media - Three horizontal lines to indicate the filter element -->
+  <path d="M 10 18 H 38 M 10 24 H 38 M 10 30 H 38"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Electrostatic Symbol - A lightning bolt indicating the electrostatic charge -->
+  <path d="M 16 15 L 22 22 L 16 22 L 22 29"
+        stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

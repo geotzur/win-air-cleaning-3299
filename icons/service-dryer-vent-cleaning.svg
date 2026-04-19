@@ -1,0 +1,8 @@
+<svg viewBox="0 0 48 48" width="48" height="48">
+  <rect x="7" y="21" width="34" height="6" rx="3" ry="3" transform="rotate(-45 24 24)"
+        fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="36" cy="12" r="5"
+          fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 37 8 Q 39 9 38 11 Q 36 12 35 10 Q 34 11 32 10 Q 34 8 35 7 Q 37 6 37 8 Z"
+        fill="none" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

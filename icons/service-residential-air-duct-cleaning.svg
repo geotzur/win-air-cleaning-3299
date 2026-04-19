@@ -1,0 +1,10 @@
+<svg viewBox="0 0 48 48" width="48" height="48" stroke="hsl(216, 60%, 28%)" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Shape 1: Residential Air Vent Opening -->
+    <path d="M 10 10 L 38 10 L 38 38 L 10 38 Z" />
+
+    <!-- Shape 2: Rotary Brush Head -->
+    <circle cx="24" cy="24" r="10" />
+
+    <!-- Shape 3: Brush Bristles (four closed triangle sub-paths in one path element) -->
+    <path d="M 24 14 L 26 12 L 22 12 Z M 34 24 L 36 26 L 36 22 Z M 24 34 L 22 36 L 26 36 Z M 14 24 L 12 22 L 12 26 Z" />
+</svg>
