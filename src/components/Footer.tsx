@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { getServices, getAreas } from '@/lib/data';
 
 export default function Footer() {
@@ -12,9 +13,15 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1 — Branding */}
           <div>
-            <Link href="/" className="flex items-center gap-2">
-              <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white font-heading font-bold text-base">W</span>
-              <span className="font-heading text-[20px] font-semibold text-text-light">Win Air Cleaning</span>
+            <Link href="/" className="flex items-center gap-2.5">
+              <Image
+                src="/logo.png"
+                alt="Win Air Cleaning logo"
+                width={44}
+                height={44}
+                className="h-11 w-11 flex-shrink-0 object-contain"
+              />
+              <span className="font-heading text-[20px] font-extrabold tracking-tight text-text-light">Win Air Cleaning</span>
             </Link>
             <p className="mt-3 font-body text-sm leading-relaxed text-text-light/50">
               Professional air duct cleaning and indoor air quality services across California.

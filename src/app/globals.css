@@ -161,10 +161,47 @@ h1, h2, h3, h4, h5, h6 {
 .hero-breeze-2 { animation-delay: 1.2s; }
 .hero-breeze-3 { animation-delay: 2.4s; }
 
+/* Hero background slow zoom (Ken Burns) */
+@keyframes heroKenburns {
+  0%   { transform: scale(1.06) translate(0, 0); }
+  50%  { transform: scale(1.12) translate(-1%, -1%); }
+  100% { transform: scale(1.06) translate(0, 0); }
+}
+@keyframes heroKenburnsMobile {
+  0%   { transform: scale(1.08) translate(0, 0); }
+  50%  { transform: scale(1.14) translate(-2%, -1%); }
+  100% { transform: scale(1.08) translate(0, 0); }
+}
+.hero-kenburns        { animation: heroKenburns 22s ease-in-out infinite; transform-origin: center; }
+.hero-kenburns-mobile { animation: heroKenburnsMobile 22s ease-in-out infinite; transform-origin: center; }
+
+/* Floating glass cards in hero */
+@keyframes heroCardFloat {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+@keyframes heroCardFloat2 {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50%      { transform: translateY(8px) translateX(-4px); }
+}
+.hero-card-float   { animation: heroCardFloat 7s ease-in-out infinite; }
+.hero-card-float-2 { animation: heroCardFloat2 8.5s ease-in-out infinite; }
+
+/* Scroll cue */
+@keyframes heroScrollCue {
+  0%   { transform: scaleY(0.2); transform-origin: top; opacity: 0.3; }
+  50%  { transform: scaleY(1);   transform-origin: top; opacity: 1; }
+  100% { transform: scaleY(0.2); transform-origin: bottom; opacity: 0.3; }
+}
+.hero-scroll-cue { animation: heroScrollCue 2.2s ease-in-out infinite; }
+
 @media (prefers-reduced-motion: reduce) {
   .hero-orbit-slow, .hero-orbit-reverse,
   .hero-float-1, .hero-float-2,
-  .hero-breeze-1, .hero-breeze-2, .hero-breeze-3 {
+  .hero-breeze-1, .hero-breeze-2, .hero-breeze-3,
+  .hero-kenburns, .hero-kenburns-mobile,
+  .hero-card-float, .hero-card-float-2,
+  .hero-scroll-cue {
     animation: none;
   }
 }

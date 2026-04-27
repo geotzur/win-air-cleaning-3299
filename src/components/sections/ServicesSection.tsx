@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { getServices } from '@/lib/data';
-import { getServiceImage, getServiceIcon } from '@/lib/images';
+import { getServiceImage } from '@/lib/images';
 import Image from 'next/image';
 
 const services = getServices();
@@ -101,7 +101,6 @@ export default function ServicesSection() {
         >
           {services.map((service) => {
             const image = getServiceImage(service.slug);
-            const icon = getServiceIcon(service.slug);
 
             return (
               <SwiperSlide key={service.slug}>
@@ -121,23 +120,12 @@ export default function ServicesSection() {
                     ) : (
                       <div className="w-full h-full bg-gradient-to-br from-primary to-secondary" />
                     )}
-
-                    {/* Icon badge */}
-                    {icon && (
-                      <div className="absolute -bottom-5 left-5 w-11 h-11 rounded-full bg-white border-2 border-primary flex items-center justify-center shadow-md z-10">
-                        <img
-                          src={icon}
-                          alt=""
-                          width={22}
-                          height={22}
-                          className="w-[22px] h-[22px]"
-                        />
-                      </div>
-                    )}
+                    {/* Gradient reveal on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
 
                   {/* Text area */}
-                  <div className="p-5 pt-7">
+                  <div className="p-5">
                     <h3 className="font-heading font-bold text-lg text-text-primary mb-1.5">
                       {service.name}
                     </h3>

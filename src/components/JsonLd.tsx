@@ -15,7 +15,7 @@ export function LocalBusinessJsonLd({ areaName }: { areaName?: string } = {}) {
     telephone: company.phone,
     email: company.email,
     url: BASE_URL,
-    image: `${BASE_URL}/logo.jpg`,
+    image: `${BASE_URL}/logo.png`,
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
@@ -178,7 +178,7 @@ export function ArticleJsonLd({
     publisher: {
       '@type': 'Organization',
       name: company.name,
-      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.jpg` },
+      logo: { '@type': 'ImageObject', url: `${BASE_URL}/logo.png` },
     },
   };
 

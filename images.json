@@ -1,24 +1,35 @@
 {
   "hero": "/images/hero.jpg",
+  "hero_portrait": "/images/hero-portrait.jpg",
   "about": "/images/about-team.jpg",
   "cta_bg": "/images/cta-background.jpg",
   "services": {
     "commercial-air-duct-cleaning": "/images/service-commercial-air-duct-cleaning.jpg",
     "dryer-vent-cleaning": "/images/service-dryer-vent-cleaning.jpg",
     "hvac-system-cleaning": "/images/service-hvac-system-cleaning.jpg",
-    "residential-air-duct-cleaning": "/images/service-residential-air-duct-cleaning.jpg"
+    "residential-air-duct-cleaning": "/images/service-residential-air-duct-cleaning.jpg",
+    "indoor-air-quality-testing": "/images/service-indoor-air-quality-testing.jpg",
+    "mold-remediation-in-ducts": "/images/service-mold-remediation-in-ducts.jpg",
+    "uv-light-air-purification": "/images/service-uv-light-air-purification.jpg",
+    "electrostatic-filter-installation": "/images/service-electrostatic-filter-installation.jpg",
+    "hvac-maintenance-plans": "/images/service-hvac-maintenance-plans.jpg",
+    "sanitizing-and-deodorizing": "/images/service-sanitizing-and-deodorizing.jpg"
   },
   "areas": {
     "burbank": "/images/area-burbank.jpg",
     "downtown-la": "/images/area-downtown-la.jpg",
     "hollywood": "/images/area-hollywood.jpg",
     "pasadena": "/images/area-pasadena.jpg",
-    "santa-monica": "/images/area-santa-monica.jpg"
+    "santa-monica": "/images/area-santa-monica.jpg",
+    "glendale": "/images/area-glendale.jpg",
+    "silver-lake": "/images/area-silver-lake.jpg",
+    "west-hollywood": "/images/area-west-hollywood.jpg"
   },
   "before_after": {
     "residential-air-duct-cleaning": {
-      "after": "/images/after-residential-air-duct-cleaning.jpg",
-      "before": "/images/before-residential-air-duct-cleaning.jpg"
+      "service_name": "Residential Air Duct Cleaning",
+      "before": "/images/before-residential-air-duct-cleaning.jpg",
+      "after": "/images/after-residential-air-duct-cleaning.jpg"
     }
   },
   "icons": {
@@ -36,5 +47,8 @@
     "hero_pattern": "Atmosphere Hero",
     "service_aspect": "4:3",
     "unique_services": 4
+  },
+  "custom": {
+    "hero-portrait": "/images/hero-portrait.jpg"
   }
 }

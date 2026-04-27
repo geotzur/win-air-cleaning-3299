@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { navLinks } from '@/lib/header-data';
 
 export default function Header() {
@@ -35,9 +36,23 @@ export default function Header() {
       >
         <div className="flex items-center justify-between px-6 py-3">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center gap-2">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary text-white font-heading font-bold text-base">W</span>
-            <span className="font-heading text-[20px] font-semibold text-primary">Win Air Cleaning</span>
+          <Link href="/" className="group flex-shrink-0 flex items-center gap-2.5">
+            <Image
+              src="/logo.png"
+              alt="Win Air Cleaning logo"
+              width={44}
+              height={44}
+              priority
+              className="h-11 w-11 flex-shrink-0 object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="flex flex-col leading-none">
+              <span className="font-heading text-[18px] md:text-[20px] font-extrabold tracking-tight text-primary">
+                Win Air Cleaning
+              </span>
+              <span className="font-heading text-[9px] md:text-[10px] uppercase tracking-[0.22em] text-text-secondary mt-0.5 hidden sm:block">
+                NADCA · Los Angeles
+              </span>
+            </div>
           </Link>
 
           {/* Center nav — desktop */}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getServices } from '@/lib/data';
-import { getServiceImage, getServiceIcon } from '@/lib/images';
+import { getServiceImage } from '@/lib/images';
 import { BreadcrumbJsonLd } from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -43,12 +43,11 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => {
               const image = getServiceImage(service.slug);
-              const icon = getServiceIcon(service.slug);
               return (
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}/`}
-                  className="group rounded-2xl border border-border bg-background overflow-hidden transition-shadow hover:shadow-lg"
+                  className="group rounded-2xl border border-border bg-background overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-primary"
                 >
                   <div className="relative aspect-[3/4] overflow-hidden bg-surface">
                     {image ? (
@@ -67,11 +66,7 @@ export default function ServicesPage() {
                         </span>
                       </div>
                     )}
-                    {icon && (
-                      <div className="absolute bottom-4 left-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary shadow-md">
-                        <Image src={icon} alt="" width={20} height={20} />
-                      </div>
-                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <div className="p-6">
                     <h2 className="font-heading font-extrabold text-lg text-text-primary mb-2 group-hover:text-primary transition-colors">
