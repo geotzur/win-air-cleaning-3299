@@ -127,23 +127,23 @@ export default function ProcessStepsSection() {
         </div>
 
         {/* Mobile: vertical */}
-        <div className="md:hidden relative pl-12">
-          {/* Vertical line */}
-          <div className="absolute left-[35px] top-0 bottom-0 w-[2px] bg-secondary/25" />
+        <div className="md:hidden relative">
+          {/* Vertical line — centered on circle (28px = half of 56px) */}
+          <div className="absolute left-7 top-7 bottom-7 w-[2px] bg-secondary/25" />
 
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-8">
             {steps.map((step, i) => {
               const Icon = iconMap[step.icon] || CheckCircle;
               return (
-                <div key={i} className="relative group">
+                <div key={i} className="relative flex items-start gap-5 group">
                   {/* Circle with icon */}
-                  <div className="absolute -left-12 top-0 w-[56px] h-[56px] rounded-full bg-secondary flex flex-col items-center justify-center transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary z-10">
+                  <div className="relative flex-shrink-0 w-14 h-14 rounded-full bg-secondary flex flex-col items-center justify-center transition-all duration-300 group-hover:scale-[1.08] group-hover:bg-primary z-10">
                     <Icon size={18} className="text-white mb-0.5" />
                     <span className="font-heading font-extrabold text-[10px] text-white/80">
                       {step.step}
                     </span>
                   </div>
-                  <div className="pt-1">
+                  <div className="pt-1 min-w-0 flex-1">
                     <h3 className="font-heading font-bold text-base text-text-primary mb-2">
                       {step.title}
                     </h3>
